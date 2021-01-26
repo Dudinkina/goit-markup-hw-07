@@ -24,11 +24,15 @@
   justify-content: center;
   align-items: center;
   color: rgba(175, 177, 184, 1); */
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
-.regular-customers-item:not(:first-child) {
-  margin-left: 30px;
-}
+// .regular-customers-item:not(:first-child) {
+//   margin-left: 30px;
+// }
 
 .regular-customers-list-link.link {
   border: 1px solid rgba(175, 177, 184, 1);
@@ -40,14 +44,21 @@
   justify-content: center;
   align-items: center;
   color: rgba(175, 177, 184, 1);
+
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    transition: all 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.regular-customers-list-link:hover,
-.regular-customers-list-link:focus {
-  border-color: #2196f3;
-  transition: all 250ms;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .regular-customers-list-link:hover,
+// .regular-customers-list-link:focus {
+//   border-color: #2196f3;
+//   transition: all 250ms;
+//   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
 .regular-customers-list-link:hover .regular-customers-icon,
 .regular-customers-list-link:focus .regular-customers-icon {
@@ -60,31 +71,46 @@
   fill: grey;
 }
 
-.regular-customers-list-item::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
+.regular-customers-list-item {
+  padding-right: 30px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+  }
 }
+
+// .regular-customers-list-item::before {
+//   content: '';
+//   display: block;
+//   width: 100%;
+//   height: 120px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-color: #f5f4fa;
+//   margin-bottom: 30px;
+// }
 
 .regular-customers-list-name {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
-.regular-customers-list-name:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.regular-customers-list-item {
-  padding-right: 30px;
-}
+// .regular-customers-list-name:not(:last-child) {
+//   margin-bottom: 20px;
+// }
 
 .regular-customers-item-description {
   font-size: 14px;

@@ -4,11 +4,16 @@
 
 .what-are-we-doing-item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.what-are-we-doing-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .what-are-we-doing-item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
 .what-we-are-doing-description {
   font-size: 14px;
   font-weight: bold;

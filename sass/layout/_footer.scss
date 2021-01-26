@@ -6,10 +6,10 @@
   align-items: center;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
+// .footer .container {
+//   display: flex;
+//   align-items: baseline;
+// }
 
 .footer-address-container {
   /* width: 270px; */
@@ -29,11 +29,15 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
-.footer-address-item:not(:last-child) {
-  margin-bottom: 9px;
-}
+// .footer-address-item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
 
 .footer-address-list {
   margin-top: 20px;
